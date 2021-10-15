@@ -11,7 +11,7 @@ def fn(x):
         return math.sqrt(3*3 - x*x)
     elif x<8:
         return (3.0/5)*(x-3)
-    elif interval == 4:
+    else:
         return 3.0
 
 if __name__ == '__main__':
