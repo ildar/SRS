@@ -3,17 +3,16 @@
 import math
 
 
+# variant 20
 def fn(x):
-    if x < -6:
-        return -3.0
-    elif x < -3:
-        return x+3
-    elif x < 3:
-        return math.sqrt(3*3 - x*x)
-    elif x < 8:
-        return (3.0/5)*(x-3)
+    if x < 0:
+        return -(1.0/2)*x
+    elif x < 2:
+        return 2-math.sqrt(2*2 - x*x)
+    elif x < 4:
+        return math.sqrt(2*2 - (x-2)*(x-2))
     else:
-        return 3.0
+        return -(1.0/2)*(x-4)
 
 
 if __name__ == '__main__':
